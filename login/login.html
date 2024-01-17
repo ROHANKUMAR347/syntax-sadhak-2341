@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <body class="login-page login-form-fall login-form-fall-init">
+        <form action="" id="loginForm" method="post"> <div class="login-header img-container login-caret  py-3">
+        <div class="login-content img-div px-3 py-0">
+        <img class="logo w-100 px-3" src="/Account/GetLoginImage" alt="Login">
+        </div>
+        </div>
+        
+        <div class="login-form" style="display: none;">
+        <div class="login-content">
+        <div class="form-group text-left text-med">
+        <p class="text-center" style="font-size: 3em; margin-bottom: 20px;">
+        <i class="fa fa-cogs"></i>
+        </p>
+        <p class="text-center">Our site is currently undergoing routine maintenance. We will be back online shortly.</p>
+        </div>
+        </div>
+        </div>
+        
+        <div class="login-form" style="display: block;">
+        <div class="login-content">
+        
+        <div id="formLogin">
+        <div style="display:none;" id="errorAlert">
+        <div class="text-right" id="errorAlert">
+        <a class="btn error-btn show-caret" data-toggle="collapse" href="#login-warning" role="button" aria-expanded="true" aria-controls="login-warning">
+        <i class="fa fa-exclamation fa-lg" aria-hidden="true"></i>&nbsp;
+        </a>
+        </div>
+        <div class="text-left text-med collapse show-caret show mb-2" id="login-warning">
+        <div class="card card-body" style="background-color:inherit">
+        <div class="validation-summary-valid" data-valmsg-summary="true" id="validationSummary"><ul><li style="display:none"></li>
+        </ul></div>
+        </div>
+        </div>
+        </div>
+        <input data-val="true" data-val-required="The AccountType field is required." id="accountype" name="AccountType" type="hidden" value="2">
+        <div class="form-row mb-3">
+        <div class="col-12 input-group">
+        <div class="input-group-prepend">
+        <span class="input-group-text"><i class="fa fa-user fa-lg"></i></span>
+        </div>
+        <input autocomplete="off" class="form-control" data-val="true" data-val-length="The field User name must be a string with a maximum length of 256." data-val-length-max="256" data-val-regex="This email address is not in the correct format. The email address should be in the form of x@abc.com and should not contain spaces, invalid characters, or combinations such as multiple '@' symbols, or '<' followed by '?' or '<' followed by '!', or '<' followed by any letter." data-val-regex-pattern="^((([a-zA-Z]|\d|[!#\$%&amp;'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-zA-Z]|\d|[!#\$%&amp;'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-zA-Z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-zA-Z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-zA-Z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-zA-Z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-zA-Z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-zA-Z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-zA-Z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-zA-Z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$" data-val-required="The User name field is required." id="username" maxlength="256" name="UserName" placeholder="Email" type="text" value="">
+        </div>
+        </div>
+        <div class="form-row mb-3">
+        <div class="col-12 input-group">
+        <div class="input-group-prepend">
+        <span class="input-group-text"><i class="fa fa-key fa-lg"></i></span>
+        </div>
+        <input class="form-control" data-val="true" data-val-length="The field Password must be a string with a maximum length of 256." data-val-length-max="256" data-val-regex="Invalid characters. Try again or try changing your password." data-val-regex-pattern="^((?!<!|<\?|<[a-zA-Z]).)*$" data-val-required="The Password field is required." id="password" maxlength="256" name="Password" placeholder="Password" type="password">
+        </div>
+        </div>
+        <div class="form-group text-left fluid-container">
+        <div class="row">
+        <a href="#" id="forgotPassword">Forgot Password?</a>
+        </div>
+        </div>
+        <div class="form-group">
+        <input class="btn btn-dark btn-block btn-login" name="Command" id="btn-submit" type="button" value="Login">
+        </div>
+        </div>
+        <div id="formReset" style="display: none;">
+        <div id="divErrorMessage" style="display: none; margin-top: 10px;" class="alert alert-danger text-left loginError"></div>
+        <div id="resetSuccess" class="alertResetSuccess" style="display: none;"></div>
+        <div class="form-row mb-3">
+        <div class="col-12 input-group">
+        <div class="input-group-prepend">
+        <span class="input-group-text"><i class="fa fa-envelope fa-lg"></i></span>
+        </div>
+        <input class="form-control" id="txtUserEmail" maxlength="256" name="UserName" placeholder="Email Address" type="text" value="">
+        </div>
+        </div>
+        <div class="form-group">
+        <input type="submit" class="btn btn-dark btn-block btn-login" id="btnResetPassword" name="Command" value="Reset Password">
+        </div>
+        <div class="form-group">
+        <a id="returnLogin" href="#">Return to Login Page</a>
+        </div>
+        </div>
+        </div>
+        </div>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Ok41cZTPyVAsqSCX_VjyJgeRatP0LDIHu27RzUR6ZadMIjebkts9VkgoznrdXzFF2jn9VeOQhfpUe_ms1dcz3yYfC25Ctez1vQTad1hHOPR80qxYLqxbbbMXoC9VqBKxxjnGGXcXgWiDp3TDX85U9M"></form>
+        <script type="text/javascript">
+            var passwordInstructionsMailed = 'Check your email for password reset instructions.';
+            var invalidEmailIDMessage = "This email address is not in the correct format. The email address should be in the form of x@abc.com and should not contain spaces, invalid characters, or combinations such as multiple '@' symbols, or '<' followed by '?' or '<' followed by '!', or '<' followed by any letter.";
+            var accountType = 2;
+            var resetPasswordUrl = "/Account/ResetPassword";
+            var emailRegex = /^((([a-zA-Z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-zA-Z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-zA-Z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-zA-Z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-zA-Z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-zA-Z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-zA-Z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-zA-Z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-zA-Z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-zA-Z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/
+        </script>
+        <script src="/js/versions/jquery/3.5.1/jquery.js"></script>
+        <script src="/js/versions/popper/1.16.1/popper.min.js"></script>
+        <script src="/js/versions/bootstrap/4.6.2/bootstrap.min.js"></script>
+        <script src="/js/Trader/mobile/mobilelogin.js"></script>
+        
+        </body>
+
+</html>
