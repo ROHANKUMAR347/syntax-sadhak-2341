@@ -1,0 +1,12 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.currency-container {
+    background-color: beige;
+    width: 470px;
+    height: 360px;
+}
