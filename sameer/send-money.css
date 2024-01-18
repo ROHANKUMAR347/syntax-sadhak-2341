@@ -1,0 +1,66 @@
+
+body{
+    background-color:  rgb(39,39,39);
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .numpad {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 45px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  input{
+    padding: 10px;
+  }
+ 
+  .input {
+  
+
+    margin-bottom: 30px;
+   
+    display: flex;
+    justify-content: center;
+  }
+  
+  .number {
+    display: flex;
+    flex-direction: column;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .row span {
+    display: block;
+
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 25px;
+   
+  }
+  
+  .row span:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .btn{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color:rgb(39,39,39) ;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+  
