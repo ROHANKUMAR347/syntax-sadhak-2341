@@ -61,6 +61,18 @@ body{
     font-size: 18px;
     color: #fff;
     margin-top: 10px;
+    cursor: pointer;
 }
-
+.btn :hover{
+    background-color:  rgb(72, 71, 71);
+}
+/* @media (max-width: 600px) {
+    .numpad {
+      padding: 20px; 
+    }
+  
+    .row span {
+      font-size: 18px;
+    }
+  } */
   
