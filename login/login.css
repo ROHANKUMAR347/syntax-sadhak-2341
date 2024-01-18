@@ -1,30 +1,36 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #272727;
-}
 
-.container {
+
+.sonali_container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #272727;
 }
 
-.form {
+#loginForm, #signupForm {
     background-color: hsl(0, 11%, 93%);
     padding: 20px;
     border-radius: 8px;
     margin: 10px;
     max-width: 400px;
     box-shadow: 0 4px 8px 0 #30475e, 0 4px 8px 0 #30475e;
+    
 }
 
-label {
+#loginForm>label {
     display: block;
     margin-bottom: 8px;
 }
 
-input {
+#signupForm>label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+#loginForm>input {
     width: 100%;
     padding: 8px;
     margin-bottom: 16px;
@@ -32,7 +38,15 @@ input {
     background-color: #dfe1e3;
 }
 
-button {
+#signupForm>input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    background-color: #dfe1e3;
+}
+
+#loginForm>button {
     background-color: #4caf50;
     color: #fff;
     padding: 10px;
@@ -41,12 +55,26 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+#loginForm>button:hover {
     background-color: #2323bb;
 }
 
-#signupLink {
+#signupForm>button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#signupForm>button:hover {
+    background-color: #2323bb;
+}
+
+#signupLink, #loginLink {
     color: red;
     text-align: center;
 }
 
+ 

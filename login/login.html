@@ -7,16 +7,32 @@
     <title>Login Page</title>
 </head>
 <body>
-    <div class="container">
-        <form id="loginForm" class="form">
-            <h2>Login</h2>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" placeholder="Enter your name" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required>
-            <button type="button" onclick="login()">Login</button>
-            <p id="signupLink">Not an existing user? <a href="#" onclick="showSignup()">Sign up</a></p>
-        </form>
+    <div class="sonali_container">
+        <div id="loginContainer">
+            <form id="loginForm" class="form">
+                <h2>Login</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="password" required>
+                <button type="button" onclick="login()">Login</button>
+                <p id="signupLink">not an existing user? <a href="#" onclick="showSignup()">Sign up</a></p>
+            </form>
+        </div>
+
+        <div id="signupContainer" style="display: none;">
+            <form id="signupForm" class="form">
+                <h2>Sign Up</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="yourName" placeholder="enter your name" required>
+                <label for="newUsername">New Username:</label>
+                <input type="text" id="newUsername" name="newUsername" placeholder="phone number / email id" required>
+                <label for="newPassword">New Password:</label>
+                <input type="password" id="newPassword" name="newPassword" placeholder="create your password" required>
+                <button type="button" onclick="signup()">Sign Up</button>
+                <p id="loginLink">already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+            </form>
+        </div>
     </div>
 
     <script src="./login.js"></script>
