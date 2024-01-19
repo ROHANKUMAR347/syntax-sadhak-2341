@@ -11,23 +11,23 @@
 
 #loginForm {
     background-color: hsl(0, 11%, 93%);
-    padding: 20px;
+    padding: 25px;
     border-radius: 8px;
     margin: 10px;
-    width: 400px;
-    box-shadow: 0 4px 8px 0 #30475e, 0 4px 8px 0 #30475e;
-    height: 400px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px 0 #30475e;
+    /* height: 400px; */
     
 }
 
 #signupForm {
     background-color: hsl(0, 11%, 93%);
-    padding: 20px;
+    padding: 25px;
     border-radius: 8px;
     margin: 10px;
-    width: 400px;
-    box-shadow: 0 4px 8px 0 #30475e, 0 4px 8px 0 #30475e;
-    height: 450px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px 0 #30475e;
+    /* height: 450px; */
     
 }
 
@@ -91,4 +91,13 @@
     text-align: center;
 }
 
- 
+@media only screen and (max-width: 600px) {
+    .sonali_container {
+        flex-direction: column;
+    }
+
+    #loginContainer, #signupContainer {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+}
