@@ -45,6 +45,7 @@ h1{
     background-color:rgb(39,39,39) ;
     font-size: 18px;
     color: #fff;
+    cursor: pointer;
 }
 @media screen and (max-width: 600px){
     body{

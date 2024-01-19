@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reciever.css">
+    <title>Payment-page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form >
+        <h1>Enter Receiver's Bank Details</h1><br>
+
+        <input class="box" type="email" id="email" placeholder="Their Email" size="30" required><br>
+
+        <input class="box" type="text" id="name" placeholder="Full name of the account holder" required><br> 
+
+        <input class="box" type="number" name="number" id="number" placeholder="SWIFT / BIC code" required><br>
+
+        <input class="box" type="number" placeholder="IBAN / Account Number" id="account" required><br>
+
+        <label class="country" for="country">Country</label>
+        <select class="box" id="country" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Srilanka">Srilanka</option>
+            <option value="Europe">Europe</option>
+            <option value="Canada">Canada</option>
+            <option value="Napel">Napel</option>
+        </select>
+        <input class="box" type="text" placeholder="City" id="city"><br>
+
+        <input class="box" type="text" placeholder="Recipient Address" id="address" required><br>
+
+        <input class="box" type="number" placeholder="Post Code" id="postcode" required><br>
+
+        <button class="btn" type="submit"  >Confirm</button>
+
+    </form>
+    <script src="reciever.js"></script>
+</body>
+
+</html>

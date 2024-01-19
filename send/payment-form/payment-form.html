@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +8,36 @@
     <title>Payment-page</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <form action="action">
+    <form id="paymentForm">
         <h1>Payment</h1>
+
         <label for="name">Name</label><br>
-        <input class="box" type="text" name="Pname" id="Pname" placeholder="Enter Name"><br>
-        <label for="pemail">Enter Email</label><br>
-        <input class="box" type="text" name="Pemail" id="Pemail" placeholder="Enter Email"><br>
+        <input class="box" type="text" name="name" id="name" placeholder="Enter Name"><br>
+
+        <label for="email">Enter Email</label><br>
+        <input class="box" type="text" name="email" id="email" placeholder="Enter Email"><br>
+
         <label for="cnum">Card Number</label><br>
         <input class="box" type="number" name="cardNumber" id="cardNumber" placeholder="1234 1234 1234 1234"><br>
+        
         <div class="div1">
             <label for="cardex">Card expiry month</label><br>
-            <input class="box2" type="month" name="month" id="month" placeholder="MM"><br>
+            <input class="box2" type="month" name="month" id="cardex" placeholder="MM"><br>
         </div>
         <div class="div1">
             <label for="year">Card expiry year</label><br>
-        <input class="box2" type="year" name="yaar" id="year" placeholder="yyyy"><br>
+            <input class="box2" type="year" name="year" id="year" placeholder="yyyy"><br>
         </div>
         <div class="div1">
             <label for="CVC">Card CVC</label><br>
-        <input class="box2" type="CVC" name="cvc" id="cvc" placeholder="cvc"><br>
+            <input class="box2" type="CVC" name="cvc" id="CVC" placeholder="cvc"><br>
         </div>
-        <button class="btn" type="button">Pay now</button>
-        <button class="btn" type="button">close</button>
+        <button class="btn" type="submit" onclick="validateDeliveryForm()">Pay now</button>
+        <a href="/send/send-money/send-money.html"><button class="btn" type="button">Close</button></a>
     </form>
+    <script src="payment.js"></script>
 </body>
+
 </html>
