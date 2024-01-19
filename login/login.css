@@ -9,13 +9,25 @@
     background-color: #272727;
 }
 
-#loginForm, #signupForm {
+#loginForm {
     background-color: hsl(0, 11%, 93%);
     padding: 20px;
     border-radius: 8px;
     margin: 10px;
-    max-width: 400px;
+    width: 400px;
     box-shadow: 0 4px 8px 0 #30475e, 0 4px 8px 0 #30475e;
+    height: 400px;
+    
+}
+
+#signupForm {
+    background-color: hsl(0, 11%, 93%);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px 0 #30475e, 0 4px 8px 0 #30475e;
+    height: 450px;
     
 }
 
@@ -36,6 +48,7 @@
     margin-bottom: 16px;
     box-sizing: border-box;
     background-color: #dfe1e3;
+    border-radius: 5px;
 }
 
 #signupForm>input {
@@ -44,6 +57,7 @@
     margin-bottom: 16px;
     box-sizing: border-box;
     background-color: #dfe1e3;
+    border-radius: 5px;
 }
 
 #loginForm>button {

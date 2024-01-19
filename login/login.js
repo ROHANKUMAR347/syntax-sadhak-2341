@@ -2,9 +2,6 @@ function login() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
 
-    // Implement your login logic here
-
-    // For demonstration purposes, showing an alert as a welcome notification
     alert("Welcome to our website, " + username + "!");
 }
 
@@ -13,9 +10,7 @@ function signup() {
     var newUsername = document.getElementById("newUsername").value;
     var newPassword = document.getElementById("newPassword").value;
 
-    // Implement your sign-up logic here
-
-    // For demonstration purposes, showing an alert as a welcome notification
+    
     alert("Welcome to our website, " + name + "!");
 }
 
