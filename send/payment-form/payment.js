@@ -22,3 +22,24 @@ function validateDeliveryForm() {
       alert("Payment  successful!");
     }
   }
+
+  var btn = document.querySelector(".btn-close");
+
+btn.addEventListener("click", ()=> {
+
+        window.location.href = "/send/send-money/send-money.html";
+});
+var isWhiteBackground = false;
+function toggleBackgroundColor() {
+  // Toggle between white and the default background color
+  var body = document.body;
+  var form = document.getElementById("paymentForm");
+  if (isWhiteBackground) {
+      body.style.backgroundColor = ''; 
+      form.style.backgroundColor = '';// Set to default background color
+  } else {
+      body.style.backgroundColor = 'white';
+      form.style.backgroundColor = 'rgb(39,39,39)';
+  }
+  isWhiteBackground = !isWhiteBackground; // Toggle the state
+}

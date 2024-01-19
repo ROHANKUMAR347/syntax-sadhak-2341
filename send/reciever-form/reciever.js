@@ -7,7 +7,6 @@ btn.addEventListener("click", (event)=> {
         if (validateDeliveryForm()) {
                 window.location.href = "/send/payment-form/payment-form.html";
             }
-    
 });
 
 

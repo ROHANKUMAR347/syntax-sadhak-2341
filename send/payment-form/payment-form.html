@@ -21,7 +21,7 @@
 
         <label for="cnum">Card Number</label><br>
         <input class="box" type="number" name="cardNumber" id="cardNumber" placeholder="1234 1234 1234 1234"><br>
-        
+
         <div class="div1">
             <label for="cardex">Card expiry month</label><br>
             <input class="box2" type="month" name="month" id="cardex" placeholder="MM"><br>
@@ -34,8 +34,11 @@
             <label for="CVC">Card CVC</label><br>
             <input class="box2" type="CVC" name="cvc" id="CVC" placeholder="cvc"><br>
         </div>
+
         <button class="btn" type="submit" onclick="validateDeliveryForm()">Pay now</button>
-        <a href="/send/send-money/send-money.html"><button class="btn" type="button">Close</button></a>
+
+        <button class="btn btn-close" type="button">Close</button>
+
     </form>
     <script src="payment.js"></script>
 </body>
