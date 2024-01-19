@@ -1,12 +1,13 @@
 
 body{
     background-color:  rgb(39,39,39);
+    font-family: 'Montserrat', sans-serif;
 }
 .flex {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 600px;
   }
   
   .numpad {
@@ -15,11 +16,16 @@ body{
     padding: 45px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: white;
+    width: 250px;
   }
   input{
     padding: 10px;
+   
   }
- 
+ .input-text{
+  display: flex;
+  flex-direction: column;
+ }
   .input {
   
 
@@ -36,6 +42,7 @@ body{
   .row {
     display: flex;
     justify-content: space-between;
+    /* width: 260px; */
   }
   
   .row span {
@@ -51,8 +58,12 @@ body{
   .row span:hover {
     background-color: #f0f0f0;
   }
-  
-  .btn{
+  /* #backspace{
+    background-color: aqua;
+    border-radius: 70%;
+    font-size: 24px; 
+  } */
+  .continue{
     width: 100%;
     padding: 10px;
     border: none;
@@ -63,7 +74,7 @@ body{
     margin-top: 10px;
     cursor: pointer;
 }
-.btn :hover{
+.continue :hover{
     background-color:  rgb(72, 71, 71);
 }
 /* @media (max-width: 600px) {
