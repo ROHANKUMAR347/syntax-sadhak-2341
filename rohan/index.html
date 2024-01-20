@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <nav>
+     <nav>
       <ul class="sidebar">
         <li onclick="closeSidebar()">
           <a href="#"
@@ -77,7 +77,7 @@
           ></a>
         </li>
       </ul>
-    </nav>
+    </nav> 
 
     <div class="rMainContainer">
       <div class="side-1">
@@ -95,72 +95,42 @@
         <button class="startNow">Start Now</button>
       </div>
       <!-- gg -->
-      <div class="currContainer">
-        <img class="rmoneyImg" src="./rimg/currencyImage.avif" alt="currency" />
-        <h2 class="reh2">Currency Rate Exchange</h2>
-        <p>Choose the currency and amounts to get exchange rate</p>
-
-        <div class="rcontainer">
-          <div class="rcurrency">
-            <select id="rcurrency-one">
-              <option value="USD" selected>US Dollar (USD)</option>
-              <option value="EUR">Euro (EUR)</option>
-              <option value="GBP">British Pound (GBP)</option>
-              <option value="JPY">Japanese Yen (JPY)</option>
-              <option value="AUD">Australian Dollar (AUD)</option>
-              <option value="CAD">Canadian Dollar (CAD)</option>
-              <option value="CHF">Swiss Franc (CHF)</option>
-              <option value="CNY">Chinese Yuan (CNY)</option>
-              <option value="INR">Indian Rupee (INR)</option>
-              <option value="MXN">Mexican Peso (MXN)</option>
-              <option value="BRL">Brazilian Real (BRL)</option>
-              <option value="SEK">Swedish Krona (SEK)</option>
-              <option value="NZD">New Zealand Dollar (NZD)</option>
-              <option value="ZAR">South African Rand (ZAR)</option>
-              <option value="KRW">South Korean Won (KRW)</option>
-              <option value="SGD">Singapore Dollar (SGD)</option>
-              <option value="HKD">Hong Kong Dollar (HKD)</option>
-              <option value="RUB">Russian Ruble (RUB)</option>
-              <option value="TRY">Turkish Lira (TRY)</option>
-              <option value="AED">United Arab Emirates Dirham (AED)</option>
-            </select>
-            <input type="number" id="amount-one" placeholder="0" value="1" />
-          </div>
-          <div class="change-rate">
-            <button class="rbtn" id="swap">SWAP</button>
-
-            <div class="rate" id="rate"></div>
-          </div>
-          <div class="rcurrency">
-            <select id="rcurrency-two">
-              <option value="USD">US Dollar (USD)</option>
-              <option value="EUR">Euro (EUR)</option>
-              <option value="GBP">British Pound (GBP)</option>
-              <option value="JPY">Japanese Yen (JPY)</option>
-              <option value="AUD">Australian Dollar (AUD)</option>
-              <option value="CAD">Canadian Dollar (CAD)</option>
-              <option value="CHF">Swiss Franc (CHF)</option>
-              <option value="CNY">Chinese Yuan (CNY)</option>
-              <option value="INR" selected>Indian Rupee (INR)</option>
-              <option value="MXN">Mexican Peso (MXN)</option>
-              <option value="BRL">Brazilian Real (BRL)</option>
-              <option value="SEK">Swedish Krona (SEK)</option>
-              <option value="NZD">New Zealand Dollar (NZD)</option>
-              <option value="ZAR">South African Rand (ZAR)</option>
-              <option value="KRW">South Korean Won (KRW)</option>
-              <option value="SGD">Singapore Dollar (SGD)</option>
-              <option value="HKD">Hong Kong Dollar (HKD)</option>
-              <option value="RUB">Russian Ruble (RUB)</option>
-              <option value="TRY">Turkish Lira (TRY)</option>
-              <option value="AED">United Arab Emirates Dirham (AED)</option>
-            </select>
-            <input type="number" id="amount-two" />
-          </div>
+    <div class="currency-body">
+      <div class="converter-logic">
+        <div class="currency-wrapper">
+          <header class="header-image"><img src="./rimg/A.png" alt=""></header>
+          <header class="header-text">Currency Converter</header>
+          <form action="#">
+            <div class="currency-amount">
+              <p>Enter Amount</p>
+              <input type="text" value="1" class="amount-input">
+            </div>
+            <div class="drop-list">
+              <div class="from">
+                <p>From</p>
+                <div class="currency-select-box">
+                  <img src="https://flagcdn.com/48x36/in.png" alt="flag">
+                  <select>  </select>
+                </div>
+              </div>
+              <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+              <div class="to">
+                <p>To</p>
+                <div class="currency-select-box">
+                  <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+                  <select>  </select>
+                </div>
+              </div>
+            </div>
+            <div class="exchange-rate">Getting exchange rate...</div>
+            <button>Get Exchange Rate</button>
+          </form>
         </div>
-        <button class="sendmoney" id="sendmoney" onclick="openfolder()">
-          Pay Now
-        </button>
+    
+        <script src="./listOfCountries.js"></script>
+        <script src="./index.js"></script>
       </div>
+    </div>
       <!-- hj -->
     </div>
 
