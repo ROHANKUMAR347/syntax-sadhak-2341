@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    min-height: 100vh;
+    
     font-family:Arial, Helvetica, sans-serif;
     
 }
@@ -45,7 +45,7 @@ nav a{
 nav img{
     width: 70px;
     cursor: pointer;
-    margin-bottom: auto;
+   
     color: #fff;
 }
 nav a:hover{
@@ -270,7 +270,7 @@ select:focus,input:focus,button:focus{
 
 /* cards */
 
-/* .cardcontainer {
+.topcurrcontainer {
   padding-top: 120px;
   display: flex;
   align-items: center;
@@ -278,15 +278,16 @@ select:focus,input:focus,button:focus{
 
   background-color: rgb(39,39,39);;
 }
-.rohanrow{
+.rohancurrmain{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .sidebar-one {
   border-radius: 4px;
   padding: 16px;
-} */
+}
 .button-primary{
   font-size: 20px;
   padding: 5px;
@@ -298,6 +299,7 @@ select:focus,input:focus,button:focus{
   padding: 5px;
   border-radius: 8px;
   cursor: pointer;
+  text-align: center;
 }
 
 .rpowerfull{
@@ -509,3 +511,93 @@ form button:hover{
   width: 93%;
   align-items: center;
 }
+
+
+/* cards */
+
+.topcurrcontainer{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  width: 100%;
+  background-color: rgb(39,39,39);
+}
+.rohancurrmain{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  /* border: 1px solid red; */
+  
+ /* flex-wrap: wrap; */
+}
+.tcur{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 35px;
+}
+.r-cardlist{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+  gap: 40px;
+}
+.r-card{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: last baseline;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-bottom: 10px;
+  border-radius: 6px;
+  padding-top: 5px;
+  margin-top: 10px;
+  transition: transform 0.2s ease-in;
+  background-color: rgb(221, 217, 217);
+
+}
+.r-card:hover{
+  transform: scale(1.06);
+}
+.card-img{
+  min-height: 60%;
+
+  border-radius: 6px;
+}
+.card-img img{
+  width: 100%;
+}
+.card-body{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+  
+}
+.card-body h3{
+  font-size: 20px;
+  color: rgb(48, 9, 9);
+  
+}
+
+.card-body p, h6{
+  color:rgb(26, 17, 17);
+  font-size: 16px;
+}
+
+.pagination-wrapper{
+  margin-top: 50px;
+  display: flex;
+  gap: 10px;
+}
+.pagination-wrapper button{
+  font-size: 30px;
+  padding: 25px;
+  box-shadow: rgba(245, 242, 242, 0.35) 0px 5px 15px;
+  border: none;
+  border-radius: 6px;
+}
+
