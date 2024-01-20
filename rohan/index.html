@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mudra</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="closeSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li>
+          <a href="#"><img src="../rimg/mudra.jpeg" alt="logo" /></a>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Payment</a></li>
+        <li><a href="#">Calculator</a></li>
+        <li>
+          <div>
+            <button id="rsigninbtn">Sign In</button>
+            <button id="rRegister">Register</button>
+          </div>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <img src="./rimg/mudra.jpeg" alt="logo" />
+        </li>
+        <li class="hideOnSmallS">
+          <a href="#">Home</a>
+        </li>
+        <li class="hideOnSmallS">
+          <a href="../sameer/payment-form.html">Payment</a>
+        </li>
+        <li class="hideOnSmallS">
+          <a href="#">Calculator</a>
+        </li>
+        <li class="hideOnSmallS">
+          <a href="#">Admin</a>
+        </li>
+        <li class="hideOnSmallS">
+          <div class="hideOnSmallS">
+            <button>Sign In</button>
+            <button>Register</button>
+          </div>
+        </li>
+
+        <li class="hidemenu" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="rMainContainer">
+      <div class="side-1">
+        <h2>
+          Easily convert your currencies <span>to any currency </span>in the
+          world!
+        </h2>
+        <p>
+          Are you going to travel and need to know how much your money is worth
+          in other currencies? Convert UokoExchange quickly and easily by
+          converting your money to Dollar, Euro or any other currency send every
+          where in the world!
+        </p>
+
+        <button class="startNow">Start Now</button>
+      </div>
+      <!-- gg -->
+      <div class="currContainer">
+        <img class="rmoneyImg" src="./rimg/currencyImage.avif" alt="currency" />
+        <h2 class="reh2">Currency Rate Exchange</h2>
+        <p>Choose the currency and amounts to get exchange rate</p>
+
+        <div class="rcontainer">
+          <div class="rcurrency">
+            <select id="rcurrency-one">
+              <option value="USD" selected>US Dollar (USD)</option>
+              <option value="EUR">Euro (EUR)</option>
+              <option value="GBP">British Pound (GBP)</option>
+              <option value="JPY">Japanese Yen (JPY)</option>
+              <option value="AUD">Australian Dollar (AUD)</option>
+              <option value="CAD">Canadian Dollar (CAD)</option>
+              <option value="CHF">Swiss Franc (CHF)</option>
+              <option value="CNY">Chinese Yuan (CNY)</option>
+              <option value="INR">Indian Rupee (INR)</option>
+              <option value="MXN">Mexican Peso (MXN)</option>
+              <option value="BRL">Brazilian Real (BRL)</option>
+              <option value="SEK">Swedish Krona (SEK)</option>
+              <option value="NZD">New Zealand Dollar (NZD)</option>
+              <option value="ZAR">South African Rand (ZAR)</option>
+              <option value="KRW">South Korean Won (KRW)</option>
+              <option value="SGD">Singapore Dollar (SGD)</option>
+              <option value="HKD">Hong Kong Dollar (HKD)</option>
+              <option value="RUB">Russian Ruble (RUB)</option>
+              <option value="TRY">Turkish Lira (TRY)</option>
+              <option value="AED">United Arab Emirates Dirham (AED)</option>
+            </select>
+            <input type="number" id="amount-one" placeholder="0" value="1" />
+          </div>
+          <div class="change-rate">
+            <button class="rbtn" id="swap">SWAP</button>
+
+            <div class="rate" id="rate"></div>
+          </div>
+          <div class="rcurrency">
+            <select id="rcurrency-two">
+              <option value="USD">US Dollar (USD)</option>
+              <option value="EUR">Euro (EUR)</option>
+              <option value="GBP">British Pound (GBP)</option>
+              <option value="JPY">Japanese Yen (JPY)</option>
+              <option value="AUD">Australian Dollar (AUD)</option>
+              <option value="CAD">Canadian Dollar (CAD)</option>
+              <option value="CHF">Swiss Franc (CHF)</option>
+              <option value="CNY">Chinese Yuan (CNY)</option>
+              <option value="INR" selected>Indian Rupee (INR)</option>
+              <option value="MXN">Mexican Peso (MXN)</option>
+              <option value="BRL">Brazilian Real (BRL)</option>
+              <option value="SEK">Swedish Krona (SEK)</option>
+              <option value="NZD">New Zealand Dollar (NZD)</option>
+              <option value="ZAR">South African Rand (ZAR)</option>
+              <option value="KRW">South Korean Won (KRW)</option>
+              <option value="SGD">Singapore Dollar (SGD)</option>
+              <option value="HKD">Hong Kong Dollar (HKD)</option>
+              <option value="RUB">Russian Ruble (RUB)</option>
+              <option value="TRY">Turkish Lira (TRY)</option>
+              <option value="AED">United Arab Emirates Dirham (AED)</option>
+            </select>
+            <input type="number" id="amount-two" />
+          </div>
+        </div>
+        <button class="sendmoney" id="sendmoney" onclick="openfolder()">
+          Pay Now
+        </button>
+      </div>
+      <!-- hj -->
+    </div>
+
+    <!--  -->
+
+    <div class="rpowerfull">
+      <div class="inrpow">
+        <div class="inrpimg">
+          <img src="./rimg/scalableimage.png" alt="" />
+        </div>
+        <div class="inrpcontest">
+          <h4>Powerful and scalable currency Exchange</h4>
+          <p>
+            Mudra currency exchange rate API is used by thousands of businesses,
+            from SME's to Fortune 500 companies across all industries. With our
+            FX currency converter API, you'll get guaranteed availability,
+            scalable volumes and responses within milliseconds. Easily integrate
+            it with your current software, including
+            <span style="color: salmon"
+              >Microsoft Dynamics, Oracle, Sage, SAP and more.</span
+            >
+          </p>
+          <button>Start You Free Trail</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
