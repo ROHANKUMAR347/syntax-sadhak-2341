@@ -1,0 +1,142 @@
+{
+    "countryData": [
+        {
+            "code": "IN",
+            "name": "India",
+            "value": 1,
+            "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
+        },
+        {
+            "code": "US",
+            "name": "United States",
+            "value": 74.23,
+            "image_url": "https://cdn.pixabay.com/photo/2017/01/07/16/55/usa-1960922_640.jpg"
+        },
+        {
+            "code": "GB",
+            "name": "United Kingdom",
+            "value": 101.45,
+            "image_url": "https://cdn.britannica.com/25/4825-050-977D8C5E/Flag-United-Kingdom.jpg"
+        },
+        {
+            "code": "FR",
+            "name": "France",
+            "value": 82.61,
+            "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png"
+        },
+        {
+            "code": "JP",
+            "name": "Japan",
+            "value": 0.69,
+            "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/1200px-Flag_of_Japan.svg.png"
+        },
+        {
+            "code": "DE",
+            "name": "Germany",
+            "value": 89.12,
+            "image_url": "https://cdn.britannica.com/97/897-004-232BDF01/Flag-Germany.jpg"
+        },
+        {
+            "code": "BR",
+            "name": "Brazil",
+            "value": 5.29,
+            "image_url": "https://cdn.britannica.com/47/6847-004-7D668BB0/Flag-Brazil.jpg"
+        },
+        {
+            "code": "AU",
+            "name": "Australia",
+            "value": 54.18,
+            "image_url": "https://c4.wallpaperflare.com/wallpaper/264/668/10/australia-flag-wallpaper-preview.jpg"
+        },
+        {
+            "code": "CA",
+            "name": "Canada",
+            "value": 58.42,
+            "image_url": "https://img.freepik.com/free-vector/illustration-canada-flag_53876-27114.jpg"
+        },
+        {
+            "code": "MX",
+            "name": "Mexico",
+            "value": 20.55,
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_Mexico.jpg/1200px-Flag_of_Mexico.jpg"
+        },
+        {
+            "code": "RU",
+            "name": "Russia",
+            "value": 79.32,
+            "image_url": "https://upload.wikimedia.org/wikipedia/en/archive/f/f3/20120812153730%21Flag_of_Russia.svg"
+        },
+        {
+            "code": "ZA",
+            "name": "South Africa",
+            "value": 13.87,
+            "image_url": "https://cdn.britannica.com/27/4227-004-32423B42/Flag-South-Africa.jpg"
+        },
+        {
+            "code": "KR",
+            "name": "South Korea",
+            "value": 0.086,
+            "image_url": "https://cdn.britannica.com/49/1949-004-8818300C/Flag-South-Korea.jpg"
+        },
+        {
+            "code": "NG",
+            "name": "Nigeria",
+            "value": 436.59,
+            "image_url": "https://cdn.britannica.com/68/5068-004-72A3F250/Flag-Nigeria.jpg"
+        },
+        {
+            "code": "EG",
+            "name": "Egypt",
+            "value": 15.68,
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/255px-Flag_of_Egypt.svg.png"
+        },
+        {
+            "code": "AR",
+            "name": "Argentina",
+            "value": 9.87,
+            "image_url": "https://cdn.britannica.com/69/5869-004-7D75CD05/Flag-Argentina.jpg"
+        },
+        {
+            "code": "TR",
+            "name": "Turkey",
+            "value": 13.87,
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/1200px-Flag_of_Turkey.svg.png"
+        },
+        {
+            "code": "AU",
+            "name": "Austria",
+            "value": 56.42,
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/255px-Flag_of_Austria.svg.png"
+        },
+        {
+            "code": "BE",
+            "name": "Belgium",
+            "value": 80.21,
+            "image_url": "https://cdn.britannica.com/08/6408-004-405E272F/Flag-Belgium.jpg"
+        },
+        {
+            "code": "CN",
+            "name": "China",
+            "value": 6.72,
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/255px-Flag_of_the_People%27s_Republic_of_China.svg.png"
+        },
+        {
+            "code": "DK",
+            "name": "Denmark",
+            "value": 92.33,
+            "image_url": "https://cdn.britannica.com/07/8007-050-D4170843/Flag-Denmark.jpg"
+        },
+        {
+            "code": "FI",
+            "name": "Finland",
+            "value": 75.88,
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Finland.svg/1200px-Flag_of_Finland.svg.png"
+        },
+        {
+            "code": "GR",
+            "name": "Greece",
+            "value": 18.45,
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/800px-Flag_of_Greece.svg.png"
+        }
+    ]
+}
