@@ -1,81 +1,62 @@
-let rate1 = document.querySelector(".currency-rate1");
-let rate2 = document.querySelector(".currency-rate2");
-let resultButton = document.querySelector(".currency-result");
+const dropList = document.querySelectorAll("form select"),
+fromCurrency = document.querySelector(".from select"),
+toCurrency = document.querySelector(".to select"),
+getButton = document.querySelector("form button");
 
-let selection = document.querySelectorAll(".currency-options select");
-let selection1 = selection[0];
-let selection2 = selection[1];
-
-let inputs = document.querySelectorAll(".currency-input");
-let inputs1 = inputs[0];
-let inputs2 = inputs[0];
-
-let rates = {};
-
-let requestURL = "https://v6.exchangerate-api.com/v6/393a7fb62bc4812e942da5a9/latest/USD";
-
-fetchRates();
-
-async function fetchRates(){
-    let res = await fetch(requestURL);
-    res = await res.json();
-    rates = res.rates;
-    Options();
-}
-
-function Options(){
-    let val = "";
-    Object.keys(rates).forEach((element) => {
-        let str = `<option value = "${element}">${element}</option>`;
-        val += str;
-    });
-    selection.forEach((element) => {
-        element.innerHTML = val;
-    })
-}
-
-function convert(value, fromCurrency, toCurrency){
-    let v = (value/rates[fromCurrency]) * rates[toCurrency];
-    let v1 = v.toFixed(3);
-    return v1 == 0.0 ? v.toFixed(5) : v1;
-}
-
-function display(){
-    let value1 = selection1.value;
-    let value2 = selection2.value;
-
-    let val = convert(1, value1, value2);
-
-    rate1.innerHTML = `1 ${value1} equals`;
-    rate2.innerHTML = `${val} ${value2}`;
-}
-
-resultButton.addEventListener("click", ()=> {
-    let fromCurr = selection1.value;
-    let fromVal = parseFloat(inputs1.value);
-    let toCurr = selection2.value;
-
-    if(isNaN(fromVal)){
-        alert("Enter a valid number");
-    }else{
-        let conVal = convert(fromVal, fromCurr, toCurr);
-        inputs2.value = conVal;
+for (let i = 0; i < dropList.length; i++) {
+    for(let currency_code in country_list){
+        let selected = i == 0 ? currency_code == "INR" ? "selected" : "" : currency_code == "USD" ? "selected" : "";
+        let optionTag = `<option value="${currency_code}" ${selected}>${currency_code}</option>`;
+        dropList[i].insertAdjacentHTML("beforeend", optionTag);
     }
+    dropList[i].addEventListener("change", e =>{
+        loadFlag(e.target);
+    });
+}
+
+function loadFlag(element){
+    for(let code in country_list){
+        if(code == element.value){
+            let imgTag = element.parentElement.querySelector("img");
+            imgTag.src = `https://flagcdn.com/48x36/${country_list[code].toLowerCase()}.png`;
+        }
+    }
+}
+
+window.addEventListener("load", ()=>{
+    getExchangeRate();
 });
 
-selection.forEach(a => a.addEventListener("change", display));
+getButton.addEventListener("click", e =>{
+    e.preventDefault();
+    getExchangeRate();
+});
 
-document.querySelector(".swap").addEventListener("click", () => {
-    let inp1 = inputs1.value;
-    let inp2 = inputs2.value;
-    let opt1 = selection1.value;
-    let opt2 = selection2.value;
-
-    inputs2.value = inp1;
-    inputs1.value = inp2;
-
-    selection2.value = opt1;
-    selection1.value = opt2;
-
-    display();
+const exchangeIcon = document.querySelector("form .icon");
+exchangeIcon.addEventListener("click", ()=>{
+    let tempCode = fromCurrency.value;
+    fromCurrency.value = toCurrency.value;
+    toCurrency.value = tempCode;
+    loadFlag(fromCurrency);
+    loadFlag(toCurrency);
+    getExchangeRate();
 })
+
+function getExchangeRate(){
+    const amount = document.querySelector("form input");
+    const exchangeRateTxt = document.querySelector("form .exchange-rate");
+    let amountVal = amount.value;
+    if(amountVal == "" || amountVal == "0"){
+        amount.value = "1";
+        amountVal = 1;
+    }
+    exchangeRateTxt.innerText = "Value After Conversion";
+    let url = `https://v6.exchangerate-api.com/v6/393a7fb62bc4812e942da5a9/latest/${fromCurrency.value}`;
+    fetch(url).then(response => response.json()).then(result =>{
+        let exchangeRate = result.conversion_rates[toCurrency.value];
+        let totalExRate = (amountVal * exchangeRate).toFixed(2);
+        exchangeRateTxt.innerText = `${amountVal} ${fromCurrency.value} = ${totalExRate} ${toCurrency.value}`;
+    }).catch(() =>{
+        exchangeRateTxt.innerText = "Enter a valid number";
+    });
+}
