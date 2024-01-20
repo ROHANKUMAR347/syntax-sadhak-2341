@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="otp.css">
+</head>
+<body>
+    <div class="container">
+        <button type="submit" class="bttn" onclick="openPopup()">button</button>
+       <div class="popup" id="popup">
+        <!-- <img src="" alt=""> -->
+        <h2 class="popuptext">Payment Successful!</h2>
+        <p>Your payment was successful! You can now continue using Mudra</p>
+        <button type="button" class="ok" onclick="closePopup()">ok</button>
+       </div>
+    </div>
+</body>
+<script>
+    let popup=document.getElementById("popup")
+    function openPopup(){
+        popup.classList.add("open-popup")
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup")
+    }
+</script>
+</html>

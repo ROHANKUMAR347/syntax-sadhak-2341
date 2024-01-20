@@ -4,7 +4,12 @@ body{
     background-color:  rgb(39,39,39);
     font-family: 'Montserrat', sans-serif;
     height: 500px;
+    box-sizing: border-box;
 }
+.blur {
+    filter: blur(5px); /* Adjust the blur amount as needed */
+    transition: filter 0.1s ease-in-out; /* Add a smooth transition effect */
+  }
 form{
     width: 600px;
     margin: 40px auto  0 auto;
@@ -49,6 +54,64 @@ h1{
     color: #fff;
     cursor: pointer;
 }
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/* .bttn{
+  padding: 10px 60px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: blueviolet;
+  transition:transform 0.2s;
+}
+.btn:active{
+    transform: scale(0.95);
+} */
+.popup{
+  width: 400px;
+  background-color: white;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.1); ;
+  text-align: center;
+  padding: 0 30px 60px;
+  /* color: green; */
+  visibility: hidden;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.popuptext{
+  font-size: 30px;
+  font-weight: 600;
+  margin: 30px 0 10px;
+}
+.ok{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: blueviolet;
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    border-radius: 6px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
 @media screen and (max-width: 600px){
     body{
         padding: 20px;
