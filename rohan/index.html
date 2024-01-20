@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-     <nav>
+    <nav>
       <ul class="sidebar">
         <li onclick="closeSidebar()">
           <a href="#"
@@ -63,7 +63,7 @@
           </div>
         </li>
 
-        <li class="hidemenu" onclick="showSidebar()">
+        <!-- <li class="hidemenu" onclick="showSidebar()">
           <a href="#"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
@@ -75,9 +75,9 @@
                 d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
               /></svg
           ></a>
-        </li>
+        </li> -->
       </ul>
-    </nav> 
+    </nav>
 
     <div class="rMainContainer">
       <div class="side-1">
@@ -95,42 +95,44 @@
         <button class="startNow">Start Now</button>
       </div>
       <!-- gg -->
-    <div class="currency-body">
-      <div class="converter-logic">
-        <div class="currency-wrapper">
-          <header class="header-image"><img src="./rimg/A.png" alt=""></header>
-          <header class="header-text">Currency Converter</header>
-          <form action="#">
-            <div class="currency-amount">
-              <p>Enter Amount</p>
-              <input type="text" value="1" class="amount-input">
-            </div>
-            <div class="drop-list">
-              <div class="from">
-                <p>From</p>
-                <div class="currency-select-box">
-                  <img src="https://flagcdn.com/48x36/in.png" alt="flag">
-                  <select>  </select>
+      <div class="currency-body">
+        <div class="converter-logic">
+          <div class="currency-wrapper">
+            <header class="header-image">
+              <img src="./rimg/A.png" alt="" />
+            </header>
+            <header class="header-text">Currency Converter</header>
+            <form action="#">
+              <div class="currency-amount">
+                <p>Enter Amount</p>
+                <input type="text" value="1" class="amount-input" />
+              </div>
+              <div class="drop-list">
+                <div class="from">
+                  <p>From</p>
+                  <div class="currency-select-box">
+                    <img src="https://flagcdn.com/48x36/in.png" alt="flag" />
+                    <select></select>
+                  </div>
+                </div>
+                <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                <div class="to">
+                  <p>To</p>
+                  <div class="currency-select-box">
+                    <img src="https://flagcdn.com/48x36/us.png" alt="flag" />
+                    <select></select>
+                  </div>
                 </div>
               </div>
-              <div class="icon"><i class="fas fa-exchange-alt"></i></div>
-              <div class="to">
-                <p>To</p>
-                <div class="currency-select-box">
-                  <img src="https://flagcdn.com/48x36/us.png" alt="flag">
-                  <select>  </select>
-                </div>
-              </div>
-            </div>
-            <div class="exchange-rate">Getting exchange rate...</div>
-            <button>Get Exchange Rate</button>
-          </form>
+              <div class="exchange-rate">Getting exchange rate...</div>
+              <button>Get Exchange Rate</button>
+            </form>
+          </div>
+
+          <script src="./listOfCountries.js"></script>
+          <script src="./index.js"></script>
         </div>
-    
-        <script src="./listOfCountries.js"></script>
-        <script src="./index.js"></script>
       </div>
-    </div>
       <!-- hj -->
     </div>
 
@@ -157,7 +159,21 @@
         </div>
       </div>
     </div>
+    <!-- shorting searching and creating card -->
+    <div class="topcurrcontainer">
+      <div class="rohancurrmain">
+        <h3 style="color: white" class="tcur">Currency Exchange Rate In INR</h3>
+        <div class="data-list-wrapper" id="data-list-wrapper">
+          <!-- append card-list that includes card here -->
+        </div>
+        <div class="pagination-wrapper" id="pagination-wrapper">
+          <!-- append the pagination button here -->
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
 
     <script src="./index.js"></script>
+    <script src="./tcountry.js"></script>
   </body>
 </html>
