@@ -3,18 +3,20 @@ body{
     padding: 0;
     background-color:  rgb(39,39,39);
     font-family: 'Montserrat', sans-serif;
+    height: 750px;
 }
 form{
     width: 600px;
-    margin: 100px auto  0 auto;
+    margin:  70px auto;
     padding: 20px;
     box-shadow: 0 4px 8px 0 #30475e, 0 4px 8px 0 #30475e;
     color: black;
     background-color: white;
+    border-radius: 10px;
+
 }
 h1{
     text-align: center;
-    
 }
 .box{
     width: 100%;
@@ -49,7 +51,7 @@ h1{
     border: none;
     border-radius: 15px;
     background-color:rgb(39,39,39) ;
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
     cursor: pointer;
 }
