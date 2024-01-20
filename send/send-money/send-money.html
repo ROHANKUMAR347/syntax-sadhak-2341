@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="send-money.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+  <div class="flex">
+    <div class="numpad ">
+      <div class="input input-text">
+        
+        <!-- <input class="input-text1" type="text" id="send" placeholder="0.00"> -->
+        <div class="rcurrency">
+          <p class="receive">You send</p>
+          <div class="box">
+            <select id="rcurrency-one">
+              <option value="USD">US Dollar (USD)</option>
+              <option value="EUR">Euro (EUR)</option>
+              <option value="GBP">British Pound (GBP)</option>
+              <option value="JPY">Japanese Yen (JPY)</option>
+              <option value="AUD">Australian Dollar (AUD)</option>
+              <option value="CAD">Canadian Dollar (CAD)</option>
+              <option value="CHF">Swiss Franc (CHF)</option>
+              <option value="CNY">Chinese Yuan (CNY)</option>
+              <option value="INR">Indian Rupee (INR)</option>
+              <option value="MXN">Mexican Peso (MXN)</option>
+              <option value="BRL">Brazilian Real (BRL)</option>
+              <option value="SEK">Swedish Krona (SEK)</option>
+              <option value="NZD">New Zealand Dollar (NZD)</option>
+              <option value="ZAR">South African Rand (ZAR)</option>
+              <option value="KRW">South Korean Won (KRW)</option>
+              <option value="SGD">Singapore Dollar (SGD)</option>
+              <option value="HKD">Hong Kong Dollar (HKD)</option>
+              <option value="RUB">Russian Ruble (RUB)</option>
+              <option value="TRY">Turkish Lira (TRY)</option>
+              <option value="AED">United Arab Emirates Dirham (AED)</option>
+            </select>
+            <input type="number" id="amount-one" placeholder="0" value="1" class="input-text1"/>
+          </div>
+          
+        </div>
+        
+        <div class="currency-rate">
+          <span> Currency Exchange Rate : </span>
+          <span class="rate" id="rate"></span>
+        </div>
+      </div>
+      <div class="input input-text">
+        
+        <!-- <input type="text" id="receive" placeholder="0.00"> -->
+        <div class="rcurrency">
+          <p class="receive">They receive</p>
+          <div class="box">
+            
+            <select id="rcurrency-two">
+              <option value="USD">US Dollar (USD)</option>
+              <option value="EUR">Euro (EUR)</option>
+              <option value="GBP">British Pound (GBP)</option>
+              <option value="JPY">Japanese Yen (JPY)</option>
+              <option value="AUD">Australian Dollar (AUD)</option>
+              <option value="CAD">Canadian Dollar (CAD)</option>
+              <option value="CHF">Swiss Franc (CHF)</option>
+              <option value="CNY">Chinese Yuan (CNY)</option>
+              <option value="INR" selected>Indian Rupee (INR)</option>
+              <option value="MXN">Mexican Peso (MXN)</option>
+              <option value="BRL">Brazilian Real (BRL)</option>
+              <option value="SEK">Swedish Krona (SEK)</option>
+              <option value="NZD">New Zealand Dollar (NZD)</option>
+              <option value="ZAR">South African Rand (ZAR)</option>
+              <option value="KRW">South Korean Won (KRW)</option>
+              <option value="SGD">Singapore Dollar (SGD)</option>
+              <option value="HKD">Hong Kong Dollar (HKD)</option>
+              <option value="RUB">Russian Ruble (RUB)</option>
+              <option value="TRY">Turkish Lira (TRY)</option>
+              <option value="AED">United Arab Emirates Dirham (AED)</option>
+            </select>
+            <input type="number" readonly  id="amount-two"/>
+          </div>
+        </div>
+      </div>
+      
+      <div class="number">
+        <div class="row ">
+          <div class="btn"><span>1</span></div>
+          <div class="btn"><span>2</span></div>
+          <div class="btn"><span>3</span></div>
+        </div>
+        <div class="row ">
+          <div class="btn"><span>4</span></div>
+          <div class="btn"><span>5</span></div>
+          <div class="btn"><span>6</span></div>
+        </div>
+        <div class="row ">
+          <div class="btn"><span>7</span></div>
+          <div class="btn"><span>8</span></div>
+          <div class="btn"><span>9</span></div>
+        </div>
+        <div class="row ">
+          <div class="btn"><span>.</span></div>
+          <div class="btn"><span>0</span></div>
+          <div><span >
+              x
+            </span></div>
+        </div>
+      </div>
+      
+        <button class="continue" type="button">Continue</button>
+      
+    </div>
+  </div>
+  <script src="send-money.js"></script>
+</body>
+
+</html>
