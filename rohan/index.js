@@ -10,46 +10,66 @@ function closeSidebar() {
 
 // currency converter
 
-let currency_one = document.getElementById("rcurrency-one");
+const dropList = document.querySelectorAll("form select"),
+fromCurrency = document.querySelector(".from select"),
+toCurrency = document.querySelector(".to select"),
+getButton = document.querySelector("form button");
 
-let currency_two = document.getElementById("rcurrency-two");
-console.log(currency_two.value);
-let amount_one = document.getElementById("amount-one");
-let amount_two = document.getElementById("amount-two");
-
-let rateElm = document.getElementById("rate");
-let convertBtn = document.getElementById("swap");
-//fetch currency rate and update
-async function calculateCurrency() {
-  try {
-    const selectOne = currency_one.value;
-    const selectTwo = currency_two.value;
-    const url = ` https://v6.exchangerate-api.com/v6/0f00b397741c3037799fa5a4/latest/${selectOne}`;
-    const res = await fetch(url);
-    const data = await res.json();
-    const c_rate = data.conversion_rates[selectTwo];
-    console.log(c_rate);
-    rateElm.innerText = `1 ${selectOne}=${c_rate} ${selectTwo}`;
-
-    amount_two.value = (amount_one.value * c_rate).toFixed(2);
-  } catch (error) {
-    console.log(error);
-  }
+for (let i = 0; i < dropList.length; i++) {
+    for(let currency_code in country_list){
+        let selected = i == 0 ? currency_code == "INR" ? "selected" : "" : currency_code == "USD" ? "selected" : "";
+        let optionTag = `<option value="${currency_code}" ${selected}>${currency_code}</option>`;
+        dropList[i].insertAdjacentHTML("beforeend", optionTag);
+    }
+    dropList[i].addEventListener("change", e =>{
+        loadFlag(e.target);
+    });
 }
-calculateCurrency();
 
-currency_one.addEventListener("change", calculateCurrency);
-currency_two.addEventListener("change", calculateCurrency);
-amount_one.addEventListener("input", calculateCurrency);
-amount_two.addEventListener("input", calculateCurrency);
+function loadFlag(element){
+    for(let code in country_list){
+        if(code == element.value){
+            let imgTag = element.parentElement.querySelector("img");
+            imgTag.src = `https://flagcdn.com/48x36/${country_list[code].toLowerCase()}.png`;
+        }
+    }
+}
 
-convertBtn.addEventListener("click", () => {
-  const temp = currency_one.value;
-  currency_one.value = currency_two.value;
-  currency_two.value = temp;
-  calculateCurrency();
+window.addEventListener("load", ()=>{
+    getExchangeRate();
 });
 
-function openfolder() {
-  window.location.href = "../sameer/payment-form.html";
+getButton.addEventListener("click", e =>{
+    e.preventDefault();
+    getExchangeRate();
+});
+
+const exchangeIcon = document.querySelector("form .icon");
+exchangeIcon.addEventListener("click", ()=>{
+    let tempCode = fromCurrency.value;
+    fromCurrency.value = toCurrency.value;
+    toCurrency.value = tempCode;
+    loadFlag(fromCurrency);
+    loadFlag(toCurrency);
+    getExchangeRate();
+})
+
+function getExchangeRate(){
+    const amount = document.querySelector("form input");
+    const exchangeRateTxt = document.querySelector("form .exchange-rate");
+    let amountVal = amount.value;
+    if(amountVal == "" || amountVal == "0"){
+        amount.value = "1";
+        amountVal = 1;
+    }
+    exchangeRateTxt.innerText = "Value After Conversion";
+    let url = `https://v6.exchangerate-api.com/v6/393a7fb62bc4812e942da5a9/latest/${fromCurrency.value}`;
+    fetch(url).then(response => response.json()).then(result =>{
+        let exchangeRate = result.conversion_rates[toCurrency.value];
+        let totalExRate = (amountVal * exchangeRate).toFixed(2);
+        exchangeRateTxt.innerText = `${amountVal} ${fromCurrency.value} = ${totalExRate} ${toCurrency.value}`;
+    }).catch(() =>{
+        exchangeRateTxt.innerText = "Enter a valid number";
+    });
 }
+
