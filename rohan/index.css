@@ -5,14 +5,11 @@
 body{
     height: auto;
     font-family:Arial, Helvetica, sans-serif;
-    width: 100%;
+    background-image: url(./rimg/bcg12.jpg);
 }
 nav{
     padding: 10px;
-    /* background-color:rgb(10,20,110); */
-    /* background-color: rgb(39,39,39);; */
-    background-color: black;
-    /* box-shadow: rgba(92, 137, 235, 0.2) 0px 2px 8px 0px; */
+    background-color: rgb(0, 0, 0);
     position: fixed;
     width: 100%;
 }
@@ -20,7 +17,7 @@ nav ul{
   width: 100%;
   list-style: none; 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
  padding-right: 10px;
 }
@@ -29,7 +26,7 @@ nav li{
     padding-right: 20px;
 }
 nav li:hover{
-    background-color: rgb(140, 181, 224);
+    background-color: silver;
     border-radius: 6px;
 }
 nav a{
@@ -46,10 +43,10 @@ nav img{
     width: 70px;
     cursor: pointer;
    
-    color: #fff;
+    /* color: #fff; */
 }
 nav a:hover{
-    color: blue;
+    color: black;
 }
 nav  li:nth-child(1):hover{
   background: none;
@@ -111,14 +108,11 @@ nav  li:last-child>a{
 
 .rMainContainer{
     display: flex;
-   
-    background-color: rgb(39,39,39);
-    
+    height: 100vh;
 }
   
 .side-1{
   width: 40%;
- 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -144,8 +138,8 @@ nav  li:last-child>a{
 }
 .side-1 button{
   font-size: 25px;
-  background-color: rgb(51,195,240);
- color: white;
+  background-color: rgb(33, 57, 65);
+  color: white;
   border: none;
   border-radius: 6px;
   padding: 10px;
@@ -164,7 +158,6 @@ nav  li:last-child>a{
   justify-content: center;
   width: 60%;
   flex-wrap: wrap;
-  /* background-color: rgb(10,20,110); */
   gap: 40px;
 }
 
@@ -228,11 +221,11 @@ p{
   padding: 0 10px;
 }
 .rbtn{
-  background-color:rgb(51,195,240);
+  background-color:rgb(33, 57, 65);
  color: white;
 }
 .sendmoney{
-  background-color:rgb(51,195,240);
+  background-color:rgb(33, 57, 65);
   font-size: 20px;
   border-radius: 6px;
   padding: 8px 12px;
@@ -291,7 +284,7 @@ select:focus,input:focus,button:focus{
   align-items: center;
   justify-content: center;
 
-  background-color: rgb(39,39,39);;
+  /* background-color: rgb(39,39,39);; */
 }
 .rohancurrmain{
   display: flex;
@@ -320,7 +313,7 @@ select:focus,input:focus,button:focus{
 .rpowerfull{
   display: flex;
   justify-content: center;
-  background-color: rgb(39,39,39);
+  /* background-color: rgb(39,39,39); */
   padding-top: 30px;
 }
 
@@ -366,7 +359,7 @@ select:focus,input:focus,button:focus{
   border-radius: 5px;
   /* background-color:rgb(141, 183, 238); */
   /* background-color: rgb(0,108,224); */
-  background-color: rgb(51,195,240);
+  background-color: rgb(33, 57, 65);
   border: none;
   cursor: pointer;
   color: #fff;
@@ -382,13 +375,6 @@ select:focus,input:focus,button:focus{
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
-/* *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-} */
 
 .header-image img{
   max-width: 75px;
@@ -441,11 +427,11 @@ form input{
   height: 50px;
   font-size: 17px;
   padding: 0 15px;
-  border: 1px solid #999;
+  border: 2px solid black;
 }
 form input:focus{
   padding: 0 14px;
-  border: 2px solid #353536;
+  border: 2px solid black;
 }
 form .drop-list{
   display: flex;
@@ -460,7 +446,8 @@ form .drop-list{
   align-items: center;
   border-radius: 5px;
   justify-content: center;
-  border: 1px solid #999;
+  border: 2px solid black;
+  background-color: white;
 }
 .currency-select-box img{
   max-width: 21px;
@@ -490,13 +477,14 @@ form .drop-list{
 form .exchange-rate{
   font-size: 17px;
   margin: 20px 0 30px;
+  color: black;
 }
 form button{
   height: 52px;
   color: #fff;
   font-size: 17px;
   cursor: pointer;
-  background: #3b3b3d;
+  background: grey;
   transition: 0.3s ease;
 }
 form button:hover{
@@ -516,13 +504,13 @@ form button:hover{
 /* cards */
 
 .topcurrcontainer{
-  background-color: white;
+  /* background-color: white; */
   display: flex;
   align-items: center;
   justify-content: center;
   /* padding: 30px; */
   width: 100%;
-  background-color: rgb(39,39,39);
+  /* background-color: rgb(39,39,39); */
 }
 .rohancurrmain{
   display: flex;
@@ -606,7 +594,7 @@ form button:hover{
 .footersonali{
   padding-top: 30px;
   background-color: black;
- 
+  width: 100%;
 }
 
 .footer-container {
@@ -617,7 +605,6 @@ form button:hover{
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
- 
 }
 
 .footer-section {
