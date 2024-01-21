@@ -1,5 +1,10 @@
 let mainSection = document.getElementById("data-list-wrapper");
 let pagination = document.getElementById("pagination-wrapper");
+let sortAtoZBtn = document.getElementById("sort-low-to-high");
+let sortZtoABtn = document.getElementById("sort-high-to-low");
+let searchBySelect = document.getElementById("search-by-select");
+let searchByInput = document.getElementById("search-by-input");
+let searchByButton = document.getElementById("search-by-button");
 
 let countryURL = "http://localhost:8080/countryData";
 async function fetchData(limit = 6, page = 1, querry = "") {
@@ -87,3 +92,25 @@ function createPagButton(btns, querry) {
     pagination.append(createBtn(i, querry));
   }
 }
+
+sortAtoZBtn.addEventListener("click", () => {
+  fetchData(6, 1, `&_sort=value&_order=asc`);
+});
+sortZtoABtn.addEventListener("click", () => {
+  fetchData(6, 1, `&_sort=value&_order=desc`);
+});
+
+searchByButton.addEventListener("click", () => {
+  fetchData(6, 1, `&${searchBySelect.value}_like=${searchByInput.value}`);
+});
+
+// debouncing feature on search
+let debounceTimeout;
+
+searchByInput.addEventListener("input", function () {
+  clearTimeout(debounceTimeout);
+  debounceTimeout = setTimeout(function () {
+    const query = searchByInput.value;
+    fetchData(6, 1, `&q=${query}`);
+  }, 1000); // Adjust the debounce delay (in milliseconds) as needed
+});
