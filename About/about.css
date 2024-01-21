@@ -1,0 +1,40 @@
+
+
+.about_container{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    background-color: rgb(39,39,39);
+    color: white;
+   display: flex;
+   flex-direction: column;
+
+}
+
+.detail, .team{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(39,39,39);
+  color: white;
+  padding-left: 20px;
+  padding-right: 5px;
+ 
+}
+
+.img_cont{
+  justify-content: center;
+   display: flex;
+   
+}
+
+.about_container>img{
+    width: 60%;
+    height: 600px;
+   display: flex;
+}
+
+
+
+
+ 
