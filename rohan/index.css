@@ -673,8 +673,6 @@ form button:hover{
 }
 
 
-
-
 .footer-section.social-section ul {
   list-style-type: none;
   padding: 0;
@@ -700,7 +698,6 @@ form button:hover{
   text-align: center;
   margin-top: -1.2%;
   width: 100%;
-  /* background-color: rgb(39,39,39);; */
   color: rgb(225, 220, 220);
   display: flex;
   justify-content: space-around;
