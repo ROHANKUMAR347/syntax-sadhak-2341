@@ -137,6 +137,66 @@
             "name": "Greece",
             "value": 18.45,
             "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/800px-Flag_of_Greece.svg.png"
+        },
+        {
+            "code": "IT",
+            "name": "Italy",
+            "value": 67.89,
+            "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/1200px-Flag_of_Italy.svg.png"
+        },
+        {
+            "code": "ES",
+            "name": "Spain",
+            "value": 46.75,
+            "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/1200px-Flag_of_Spain.svg.png"
+        },
+        {
+            "code": "PT",
+            "name": "Portugal",
+            "value": 10.56,
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/1200px-Flag_of_Portugal.svg.png"
+        },
+        {
+            "code": "SE",
+            "name": "Sweden",
+            "value": 68.42,
+            "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png"
+        },
+        {
+            "code": "CH",
+            "name": "Switzerland",
+            "value": 81.23,
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Flag_of_Switzerland_%28Pantone%29.svg/1280px-Flag_of_Switzerland_%28Pantone%29.svg.png"
+        },
+        {
+            "code": "NO",
+            "name": "Norway",
+            "value": 93.76,
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/1280px-Flag_of_Norway.svg.png"
+        },
+        {
+            "code": "NL",
+            "name": "Netherlands",
+            "value": 71.34,
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png"
+        },
+        {
+            "code": "IR",
+            "name": "Iran",
+            "value": 25.08,
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_Iran.svg/1200px-Flag_of_Iran.svg.png"
+        },
+        {
+            "code": "IN",
+            "name": "Indonesia",
+            "value": 15.67,
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/1200px-Flag_of_Indonesia.svg.png"
+        },
+        {
+            "code": "TH",
+            "name": "Thailand",
+            "value": 7.65,
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/1200px-Flag_of_Thailand.svg.png"
         }
     ]
 }

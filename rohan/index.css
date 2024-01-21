@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    
+    height: auto;
     font-family:Arial, Helvetica, sans-serif;
     
 }
@@ -548,19 +548,19 @@ form button:hover{
   flex-direction: column;
   text-align: center;
   align-items: center;
-  justify-content: last baseline;
+  /* justify-content: last baseline; */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding-bottom: 10px;
   border-radius: 6px;
   padding-top: 5px;
   margin-top: 10px;
-  transition: transform 0.2s ease-in;
+  /* height: auto; */
   background-color: rgb(221, 217, 217);
 
 }
-.r-card:hover{
+/* .r-card:hover{
   transform: scale(1.06);
-}
+} */
 .card-img{
   min-height: 60%;
 
@@ -603,12 +603,17 @@ form button:hover{
 
 
 /* footerStart */
+.footersonali{
+  padding-top: 30px;
+  background-color: black;
+ 
+}
 
 .footer-container {
   display: flex;
   justify-content: space-around;
   padding: 20px;
-  background-color: rgb(39,39,39);
+  margin-top: 30px;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -617,6 +622,7 @@ form button:hover{
 
 .footer-section {
   margin-right: 20px;
+ 
 }
 
 .footer-section h3 {
@@ -694,7 +700,7 @@ form button:hover{
   text-align: center;
   margin-top: -1.2%;
   width: 100%;
-  background-color: rgb(39,39,39);;
+  /* background-color: rgb(39,39,39);; */
   color: rgb(225, 220, 220);
   display: flex;
   justify-content: space-around;
