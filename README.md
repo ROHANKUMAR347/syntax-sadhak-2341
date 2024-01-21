@@ -7,7 +7,7 @@ Mudra is a web development project aimed at demonstrating the team's ability to 
 
 ## Tech Stack
 
-The StayHub Hotel website was built using the following technologies and tools:
+The Mudra website was built using the following technologies and tools:
 
 + **HTML:** The foundation of the website's structure and content.
 + **CSS:** For styling and making the website visually appealing.
