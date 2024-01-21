@@ -6,10 +6,7 @@ body{
     height: 500px;
     box-sizing: border-box;
 }
-.blur {
-    filter: blur(5px); /* Adjust the blur amount as needed */
-    transition: filter 0.1s ease-in-out; /* Add a smooth transition effect */
-  }
+
 form{
     width: 600px;
     margin: 40px auto  0 auto;

@@ -16,7 +16,7 @@ btns.forEach(btn => {
     });
 });
 
-var backspaceBtn = document.querySelector(".material-symbols-outlined");
+var backspaceBtn = document.querySelector(".remove");
 backspaceBtn.addEventListener("click", () => {
     inputs.forEach(input => {
         input.value = input.value.slice(0, -1); 
