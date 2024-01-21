@@ -1,6 +1,5 @@
 
 body{
-  /* background-color:  rgb(39,39,39); */
   font-family: 'Times New Roman', Times, serif;
   margin: 0;
   padding: 0;
@@ -44,27 +43,20 @@ flex-direction: column;
 .row {
   display: flex;
   justify-content: space-between;
-  /* width: 260px; */
 }
 
 .row span {
   display: block;
-
   padding: 15px;
   border-radius: 50%;
   cursor: pointer;
   font-size: 25px;
- 
 }
 
 .row span:hover {
   background-color: #f0f0f0;
 }
-/* #backspace{
-  background-color: aqua;
-  border-radius: 70%;
-  font-size: 24px; 
-} */
+
 .continue{
   width: 100%;
   padding: 10px;
@@ -76,18 +68,14 @@ flex-direction: column;
   margin-top: 10px;
   cursor: pointer;
 }
+
 .continue :hover{
   background-color:  rgb(72, 71, 71);
 }
 
 .rcurrency{
-/* padding: 40px 0; */
 display: flex;
 flex-direction: column;
-/* align-items: center; */
-/* justify-content: space-between; */
-
-  /* padding: 0; */
 }
 .rcurrency select{
 width: 50%;
@@ -98,43 +86,27 @@ border-bottom-left-radius: 12px;
 -webkit-appearance: none;
 appearance: none;
 border: 1px solid #dedede;
-/* background: transparent; */
-/* background-image: url(http://www.w3.org/2000/svg); */
 background-color: rgb(250,250,250);
-
 background-size:  12 px auto ,100%;
 background-repeat: no-repeat;
 } 
+
 .rcurrency input{
 width: 50%;
 border: 1px solid #dedede;
 border-bottom-right-radius: 12px;
 border-top-right-radius: 12px;
-/* background: transparent; */
 font-size: 20px;
 text-align: right;
 color: black;
 }
-/* .rate{
-display: flex;
-justify-content: start;
-} */
+
 .box{
 display: flex;
-
-/* flex-direction: column; */
 }
+
 .currency-rate{
 margin-top: 40px;
 margin-bottom: -8px;
 align-items: flex-start;
 }
-/* @media (max-width: 600px) {
-  .numpad {
-    padding: 20px; 
-  }
-
-  .row span {
-    font-size: 18px;
-  }
-} */

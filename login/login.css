@@ -9,7 +9,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100%; */
     font-family: Arial, sans-serif;
     background-color: #272727;
     margin: auto;
@@ -18,7 +17,6 @@ body{
 #loginContainer, #signupContainer{
     padding: 150px;
     width: 420px;
-    /* height: 100%; */
     margin: auto;
 }
 
@@ -26,11 +24,8 @@ body{
     background-color: hsl(0, 11%, 93%);
     padding: 25px;
     border-radius: 8px;
-    /* margin: 20%; */
     max-width: 100%;
-    box-shadow: 0 4px 8px 0 #30475e;
-    /* height: 400px; */
-    
+    box-shadow: 0 4px 8px 0 #30475e; 
 }
 
 #signupForm {
@@ -40,8 +35,6 @@ body{
     margin: 10px;
     max-width: 100%;
     box-shadow: 0 4px 8px 0 #30475e;
-    /* height: 450px; */
-    
 }
 
 #loginForm>label {
@@ -53,7 +46,6 @@ body{
     display: block;
     margin-bottom: 8px;
 }
-
 
 #loginForm>input {
     width: 100%;
@@ -107,7 +99,6 @@ body{
 @media only screen and (max-width: 600px) {
     .sonali_container {
         flex-direction: column;
-       
     }
 
     #loginContainer, #signupContainer {
