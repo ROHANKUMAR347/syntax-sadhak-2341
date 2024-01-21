@@ -1,4 +1,4 @@
-
+// Eventlistener for redirecting to payment form
 var btn = document.querySelector(".btn");
 
 btn.addEventListener("click", (event)=> {
@@ -9,7 +9,7 @@ btn.addEventListener("click", (event)=> {
             }
 });
 
-
+// form validation 
 function validateDeliveryForm() {
         // Get the values of the input fields
         var emailValue = document.getElementById("email").value;
