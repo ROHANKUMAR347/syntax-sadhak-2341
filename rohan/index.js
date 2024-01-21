@@ -87,8 +87,6 @@ function getExchangeRate() {
 
 // code for creating country cards
 
-
-
 // footerStart
 
 function toggleLanguageDropdown() {
@@ -103,7 +101,6 @@ window.onclick = function (event) {
       languageDropdown.classList.remove("show");
   }
 };
-
 
 function selectLanguage(language) {
   

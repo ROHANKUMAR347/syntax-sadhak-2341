@@ -36,7 +36,7 @@ function createCard(item) {
 
   const image = document.createElement("img");
   image.src = item.image_url;
-  image.alt = `Flag of ${item.name}`; // Set meaningful alt text
+  image.alt = `Flag of ${item.name}`; 
   imgDiv.append(image);
 
   const cardbody = document.createElement("div");
@@ -112,5 +112,5 @@ searchByInput.addEventListener("input", function () {
   debounceTimeout = setTimeout(function () {
     const query = searchByInput.value;
     fetchData(6, 1, `&q=${query}`);
-  }, 1000); // Adjust the debounce delay (in milliseconds) as needed
+  }, 1000); 
 });

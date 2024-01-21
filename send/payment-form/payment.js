@@ -1,7 +1,7 @@
 // sameer
 // form validation start
 function validateDeliveryForm(event) {
-    // Get the values of the input fields
+    
     event.preventDefault();
     var NameValue = document.getElementById("name").value;
     var emailValue = document.getElementById("email").value;
@@ -36,7 +36,6 @@ function validateDeliveryForm(event) {
 // open popup
 let popup=document.getElementById("popup")
 function openPopup(){
-  // document.body.classList.add("popup-background-blur");
     popup.classList.add("open-popup")
 }
 
@@ -48,23 +47,8 @@ function redirectToIndex() {
 
 // close popup
 function closePopup(){
-  // document.body.classList.remove("popup-background-blur");
   popup.classList.remove("open-popup")
     redirectToIndex()
 
 }
 
-// var isWhiteBackground = false;
-// function toggleBackgroundColor() {
-
-//   var body = document.body;
-//   var form = document.getElementById("paymentForm");
-//   if (isWhiteBackground) {
-//       body.style.backgroundColor = ''; 
-//       form.style.backgroundColor = '';
-//   } else {
-//       body.style.backgroundColor = 'white';
-//       form.style.backgroundColor = 'rgb(39,39,39)';
-//   }
-//   isWhiteBackground = !isWhiteBackground; 
-// }

@@ -26,16 +26,20 @@
               /></svg
           ></a>
         </li>
-        <li>
-          <a href="#"><img src="../rimg/mudra.jpeg" alt="logo" /></a>
-        </li>
+       
         <li><a href="#">Home</a></li>
         <li><a href="../send/send-money/send-money.html">Send Money</a></li>
-        <li><a href="#">About Us</a></li>
+          
+        <li >
+          <a href="../admin/index.html">Admin</a>
+        </li>
+        
+        <li >
+          <a href="../About/about.html">About us</a>
+        </li>
         <li>
           <div>
-            <a href="../login/login.html"><button type="button">Log in/Sign Up</button></a>
-            
+            <a href="../login/login.html"><button type="button" style="background-color: none;">Log in/Sign Up</button></a>
           </div>
         </li>
       </ul>
@@ -50,11 +54,12 @@
         <li class="hideOnSmallS">
           <a href="../send/send-money/send-money.html">Send Money</a>
         </li>
-        <li class="hideOnSmallS">
-          <a href="../About/about.html">About us</a>
-        </li>
+        
         <li class="hideOnSmallS">
           <a href="../admin/index.html">Admin</a>
+        </li>
+        <li class="hideOnSmallS">
+          <a href="../About/about.html">About us</a>
         </li>
         <li class="hideOnSmallS">
           <div class="hideOnSmallS">
@@ -91,7 +96,7 @@
           where in the world!
         </p>
 
-        <button class="startNow">Start Now</button>
+        <button class="startNow btncss ">Start Now</button>
       </div>
       <!-- gg -->
       <div class="currency-body">
@@ -154,7 +159,7 @@
               >Microsoft Dynamics, Oracle, Sage, SAP and more.</span
             >
           </p>
-          <button>Start You Free Trail</button>
+          <button class="btncss" >Start You Free Trail</button>
         </div>
       </div>
     </div>
@@ -165,29 +170,29 @@
         <div class="short-search" id="short-search">
           <button
             id="sort-low-to-high"
-            class="u-full-width button button-primary"
+            class="u-full-width button button-primary btncss"
           >
             Low To High
           </button>
           <button
             id="sort-high-to-low"
-            class="u-full-width button button-primary"
+            class="u-full-width button button-primary btncss"
           >
             High To Low
           </button>
-          <select id="search-by-select">
+          <select style="border:none;" id="search-by-select">
             <option value="">Search By</option>
             <option value="name">name</option>
             <option value="code">code</option>
           </select>
-          <input
+          <input style="margin-left: 20px;"
             type="text"
             id="search-by-input"
             placeholder="Enter name/code here"
           />
           <button
             id="search-by-button"
-            style="background-color: rgb(33, 57, 65); color: white; border: none"
+            class="btncss " style="margin-left: 20px;"
           >
             Search
           </button>
@@ -195,7 +200,7 @@
         <div class="data-list-wrapper" id="data-list-wrapper">
           <!-- append card-list that includes card here -->
         </div>
-        <div class="pagination-wrapper" id="pagination-wrapper">
+        <div style="margin-bottom: 50px;" class="pagination-wrapper" id="pagination-wrapper">
           <!-- append the pagination button here -->
         </div>
       </div>
