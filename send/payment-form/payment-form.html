@@ -1,7 +1,6 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +10,8 @@
 </head>
 
 <body>
+    <!-- Sameer Section -->
+    <!-- payment-form  start-->
     <form id="paymentForm">
         <h1>Payment</h1>
 
@@ -25,7 +26,7 @@
 
         <div class="div1">
             <label for="cardex">Card expiry month</label><br>
-            <input class="box2" type="month" name="month" id="cardex" placeholder="MM"><br>
+            <input class="box2" type="text" name="month" id="cardex" placeholder="MM"><br>
         </div>
         <div class="div1">
             <label for="year">Card expiry year</label><br>
@@ -40,12 +41,13 @@
 
         <button class="btn btn-close " type="button" onclick="redirectToIndex()">Close</button>
         <div class="popup" id="popup">
-            <!-- <img src="" alt=""> -->
-            <h2 class="popuptext">Payment Successful!</h2>
+            <img src="tick.png" class="tick" alt="tick">
+            <h2 class="popuptext">Thank You!</h2>
             <p>Your payment was successful! You can now continue using Mudra</p>
-            <button type="button" class="ok btn-close" onclick="closePopup();redirectToIndex()">ok</button>
+            <button type="button" class="ok btn-close" onclick="closePopup();redirectToIndex()">Ok</button>
            </div>
     </form>
+    <!-- payment-form  end -->
     <script src="payment.js"></script>
 </body>
 

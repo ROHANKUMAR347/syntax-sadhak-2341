@@ -2,8 +2,8 @@ function login() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
     if(username==="password" && password==="password"){
-        alert("Welcome to our website, " + "!");
-        window.location.href="google.com";
+        alert("Welcome to our website," + "!");
+        window.location.href="../rohan/index.html";
     } else{
         alert("Please enter valid username and password");
     }
@@ -18,6 +18,7 @@ function signup() {
 
     
     alert("Welcome to our website, " + name + "!");
+    window.location.href="../rohan/index.html";
 }
 
 function showSignup() {

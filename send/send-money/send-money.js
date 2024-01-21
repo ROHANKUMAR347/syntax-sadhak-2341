@@ -1,12 +1,12 @@
 var btns = document.querySelectorAll(".btn");
 var inputs = document.querySelectorAll(".input-text1");
-
 var btn = document.querySelector(".continue");
-
+// eventlistener for redirecting to reciever form
 btn.addEventListener("click", ()=> {
         window.location.href = "/send/reciever-form/reciever.html";
 });
 
+// eventlistener for adding the numbers
 btns.forEach(btn => {
     btn.addEventListener("click", () => {
         inputs.forEach(input => {
@@ -16,12 +16,15 @@ btns.forEach(btn => {
     });
 });
 
+// eventlistener for removing number by backspace button
 var backspaceBtn = document.querySelector(".remove");
 backspaceBtn.addEventListener("click", () => {
     inputs.forEach(input => {
         input.value = input.value.slice(0, -1); 
     });
 });
+
+// eventlistener for converting currencies
 let currency_one = document.getElementById("rcurrency-one");
 
 let currency_two = document.getElementById("rcurrency-two");

@@ -1,18 +1,23 @@
 
-
+body{
+    margin: 0;
+    padding: 0;
+}
 .sonali_container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100%; */
     font-family: Arial, sans-serif;
     background-color: #272727;
+    margin: auto;
 }
 
 #loginContainer, #signupContainer{
-    padding: 25%;
+    padding: 150px;
     width: 420px;
-    height: 70%;
+    /* height: 100%; */
+    margin: auto;
 }
 
 #loginForm {

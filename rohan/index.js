@@ -72,7 +72,7 @@ function getExchangeRate() {
     amountVal = 1;
   }
   exchangeRateTxt.innerText = "Value After Conversion";
-//   let url = `https://v6.exchangerate-api.com/v6/393a7fb62bc4812e942da5a9/latest/${fromCurrency.value}`;
+  let url = `https://v6.exchangerate-api.com/v6/393a7fb62bc4812e942da5a9/latest/${fromCurrency.value}`;
   fetch(url)
     .then((response) => response.json())
     .then((result) => {
