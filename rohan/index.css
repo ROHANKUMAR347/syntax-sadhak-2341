@@ -215,7 +215,7 @@ p{
   font-size: 30px;
   text-align: right;
   color: #fff;
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 .change-rate{
   display: flex;
