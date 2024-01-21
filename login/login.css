@@ -9,12 +9,16 @@
     background-color: #272727;
 }
 
+#loginContainer, #signupContainer{
+    padding: 20%;
+}
+
 #loginForm {
     background-color: hsl(0, 11%, 93%);
     padding: 25px;
     border-radius: 8px;
     margin: 10px;
-    max-width: 400px;
+    max-width: 100%;
     box-shadow: 0 4px 8px 0 #30475e;
     /* height: 400px; */
     
@@ -25,7 +29,7 @@
     padding: 25px;
     border-radius: 8px;
     margin: 10px;
-    max-width: 400px;
+    max-width: 100%;
     box-shadow: 0 4px 8px 0 #30475e;
     /* height: 450px; */
     
