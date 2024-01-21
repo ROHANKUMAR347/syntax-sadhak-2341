@@ -5,7 +5,7 @@
 body{
     height: auto;
     font-family:Arial, Helvetica, sans-serif;
-    
+    width: 100%;
 }
 nav{
     padding: 10px;
@@ -80,8 +80,10 @@ nav  li:nth-child(1):hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-   
 }
+/* nav  li:last-child{
+  display: none;
+} */
 nav  li:last-child>a{
     background-color: #fff;
     color: #fff;
@@ -105,23 +107,18 @@ nav  li:last-child>a{
     background-color: #fff;
   }
 
+
+
 .rMainContainer{
     display: flex;
-    /* justify-content: center; */
-    /* background-color: rgb(10,20,110); */
+   
     background-color: rgb(39,39,39);
-    /* height: 90vh; */
-    height: 100vh;
-     /* margin-top: 50px;  */
-    /* margin-bottom: 10%; */
+    
 }
   
 .side-1{
   width: 40%;
-  /* height: 100%; */
-  /* border: 1px solid red; */
-  /* height: 90vh; */
-  /* background-color: rgb(10,20,110); */
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -263,6 +260,24 @@ select:focus,input:focus,button:focus{
     flex-direction: column;
   }
 }
+@media(max-width:1645px){
+  .hidemenu{
+      display: none;
+  }
+}
+@media(max-width:800px){
+  .hidemenu{
+      display: flex;
+  }
+  .hideOnSmallS{
+      display: none;
+  }
+}
+@media(max-width:400px){
+  .sidebar{
+      width: 100%;
+  }
+}
 
 
 
@@ -301,7 +316,7 @@ select:focus,input:focus,button:focus{
   cursor: pointer;
   text-align: center;
 }
-
+/* powerfasdf */
 .rpowerfull{
   display: flex;
   justify-content: center;
@@ -310,10 +325,11 @@ select:focus,input:focus,button:focus{
 }
 
 .inrpow{
-  min-width: 80%;
+  width: 80%;
   /* border: 1px solid red; */
   display: flex;
-  flex-wrap: nowrap;
+  /* flex-wrap: wrap; */
+  justify-content: center;
 }
 .inrpimg{
   width: 50%;
@@ -358,24 +374,7 @@ select:focus,input:focus,button:focus{
 
 
 
-  @media(max-width:1640px){
-    .hidemenu{
-        display: none;
-    }
-}
-  @media(max-width:800px){
-    .hidemenu{
-        display: flex;
-    }
-    .hideOnSmallS{
-        display: none;
-    }
-}
-@media(max-width:400px){
-    .sidebar{
-        width: 100%;
-    }
-}
+ 
 
 
 
@@ -414,6 +413,7 @@ select:focus,input:focus,button:focus{
 }
 .currency-wrapper{
   width: 500px;
+  /* width: auto; */
   padding: 30px;
   border-radius: 7px;
   background: white;
@@ -520,7 +520,7 @@ form button:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  /* padding: 30px; */
   width: 100%;
   background-color: rgb(39,39,39);
 }
@@ -715,7 +715,100 @@ form button:hover{
       width: 100%;
       margin-bottom: 20px;
   }
+
 }
 
 
 /* footerEnd */
+
+/* responshive */
+
+@media (max-width:700px){
+  
+  
+  .inrpow{
+    width: 80%;
+    
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    text-align: start;
+    align-items: center;
+  }
+  
+  
+  
+  .inrpcontest h4{
+    color: white;
+    font-size: 28px;
+  }
+  .rMainContainer{
+    display: flex;
+   flex-direction: column;
+    background-color: rgb(39,39,39);
+    justify-content: center;
+    text-align: start;
+    align-items: center;
+  }
+  .r-cardlist{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 40px;
+  }
+  .pagination-wrapper{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+}
+@media (max-width:480px){
+  
+  
+  .inrpow{
+    width: 80%;
+    
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    text-align: start;
+    align-items: center;
+  }
+  
+  
+  
+  .inrpcontest h4{
+    color: white;
+    font-size: 28px;
+  }
+  .rMainContainer{
+    display: flex;
+   flex-direction: column;
+    background-color: rgb(39,39,39);
+    justify-content: center;
+    text-align: start;
+    align-items: center;
+  }
+  .r-cardlist{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 40px;
+  }
+  .pagination-wrapper{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+}
+@media (max-width:1024px){
+  .currency-wrapper{
+    width: auto;
+  }
+}
