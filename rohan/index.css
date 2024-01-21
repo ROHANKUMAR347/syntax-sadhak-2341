@@ -4,8 +4,9 @@
 }
 body{
     height: auto;
-    font-family:Arial, Helvetica, sans-serif;
+    /* font-family:Arial, Helvetica, sans-serif; */
     background-image: url(./rimg/bcg12.jpg);
+    font-family: 'Times New Roman', Times, serif;
 }
 nav{
     padding: 10px;
@@ -383,6 +384,7 @@ select:focus,input:focus,button:focus{
 
 .header-text {
   color: black;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .currency-body{
@@ -392,6 +394,7 @@ select:focus,input:focus,button:focus{
   min-height: 100vh;
   padding: 0 10px;
   margin-top: 4%; 
+  font-family: 'Times New Roman', Times, serif;
 } 
 ::selection{
   color: #fff;

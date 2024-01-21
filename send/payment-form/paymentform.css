@@ -1,8 +1,9 @@
 body{
     margin: 0;
     padding: 0;
-    background-color:  rgb(39,39,39);
-    font-family: 'Montserrat', sans-serif;
+    /* background-color:  rgb(39,39,39); */
+    background-image: url(../../rohan/rimg/bcg12.jpg);
+    font-family: 'Times New Roman', Times, serif;
     height: 500px;
     box-sizing: border-box;
 }

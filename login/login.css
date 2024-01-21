@@ -2,6 +2,8 @@
 body{
     margin: 0;
     padding: 0;
+    background-image: url(../rohan/rimg/bcg12.jpg);
+    font-family: 'Times New Roman', Times, serif;
 }
 .sonali_container {
     display: flex;
