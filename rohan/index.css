@@ -5,11 +5,14 @@
 body{
     height: auto;
     font-family:Arial, Helvetica, sans-serif;
-    background: rgb(60, 65, 66);
+    
 }
 nav{
     padding: 10px;
+    /* background-color:rgb(10,20,110); */
+    /* background-color: rgb(39,39,39);; */
     background-color: black;
+    /* box-shadow: rgba(92, 137, 235, 0.2) 0px 2px 8px 0px; */
     position: fixed;
     width: 100%;
 }
@@ -17,14 +20,16 @@ nav ul{
   width: 100%;
   list-style: none; 
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+ padding-right: 10px;
 }
 nav li{
     height: 60px;
+    padding-right: 20px;
 }
 nav li:hover{
-    background-color: silver;
+    background-color: rgb(140, 181, 224);
     border-radius: 6px;
 }
 nav a{
@@ -38,8 +43,7 @@ nav a{
     font-weight: 500;
 }
 nav img{
-    /* width: 70px; */
-    height: 60px;
+    width: 70px;
     cursor: pointer;
    
     color: #fff;
@@ -58,6 +62,7 @@ nav  li:nth-child(1):hover{
   }
   nav  li:nth-child(6) button{
     font-size: 20px;
+    /* background-color:rgb(10,20,110); */
     background-color: black;
     border: none;
     color: #fff;
@@ -65,7 +70,7 @@ nav  li:nth-child(1):hover{
    padding: 10px;
   }
   nav  li:nth-child(6) button :hover{
-    background-color:silver ;
+    background-color:rgb(140, 181, 224); ;
   }
   nav  li:nth-child(6):hover{
     background: none;
@@ -75,6 +80,7 @@ nav  li:nth-child(1):hover{
     justify-content: center;
     align-items: center;
     text-align: center;
+   
 }
 nav  li:last-child>a{
     background-color: #fff;
@@ -101,12 +107,21 @@ nav  li:last-child>a{
 
 .rMainContainer{
     display: flex;
+    /* justify-content: center; */
+    /* background-color: rgb(10,20,110); */
     background-color: rgb(39,39,39);
+    /* height: 90vh; */
     height: 100vh;
+     /* margin-top: 50px;  */
+    /* margin-bottom: 10%; */
 }
   
 .side-1{
   width: 40%;
+  /* height: 100%; */
+  /* border: 1px solid red; */
+  /* height: 90vh; */
+  /* background-color: rgb(10,20,110); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,6 +167,7 @@ nav  li:last-child>a{
   justify-content: center;
   width: 60%;
   flex-wrap: wrap;
+  /* background-color: rgb(10,20,110); */
   gap: 40px;
 }
 
@@ -168,11 +184,13 @@ p{
   color: #fff;
   background-color:  rgba(11, 243, 166, 0.37);
   cursor: pointer;
+  /* font-size: 20px; */
   border-radius: 5px;
   padding: 5px 12px;
 }
 .rmoneyImg{
   width: 150px;
+  /* color: rgba(2, 161, 108, 0.37); */
   border-radius: 60%;
   margin-top: 25px;
 }
@@ -245,6 +263,9 @@ select:focus,input:focus,button:focus{
     flex-direction: column;
   }
 }
+
+
+
 
 
 /* cards */
