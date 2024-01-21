@@ -32,7 +32,7 @@ function validateDeliveryForm(event) {
 });
 let popup=document.getElementById("popup")
 function openPopup(){
-  document.body.classList.add("blur");
+  // document.body.classList.add("popup-background-blur");
     popup.classList.add("open-popup")
 }
 function redirectToIndex() {
@@ -40,8 +40,8 @@ function redirectToIndex() {
   window.location.href = "/rohan/index.html"; 
 }
 function closePopup(){
-  document.body.classList.remove("blur");
-    popup.classList.remove("open-popup")
+  // document.body.classList.remove("popup-background-blur");
+  popup.classList.remove("open-popup")
     redirectToIndex()
 
 }
