@@ -15,6 +15,19 @@ The Mudra website was built using the following technologies and tools:
 + **Bootstrap** used for responsive styling.
 + **JSON server:**  Deployed at https://mudra-a9y3.onrender.com . Serves as our backend server to store all the information related to the website
 
+## Usage
++ Home Page : Explore top offers and find the currency rates of every country.
++login signup Page : to make a payment need to login and signup to our website.
++ About Us Page : Learn more about Mudra and the services offered.
++ Admin Page: for only access for admin.
++ payment Page:able to send money by convert with different country rates after logging in.
+
+
+
+# Getting Started
+To explore Mudra visit https://mudraexchange.netlify.app/ Use the top navigation bar to access different sections of the website, and utilize the search and filter options to find All country's value in INR and we have a currency rate exchanger where you are are able to check the real time currency rate. 
+
+
 ### Screen Short
 
 
