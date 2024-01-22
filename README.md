@@ -30,13 +30,13 @@ To explore Mudra visit https://mudraexchange.netlify.app/ Use the top navigation
 
 ### Screen Short
 
-<img src="" alt="Description of the image" ></img>
-<img src="" alt="Description of the image" ></img>
+<img src="https://github.com/ROHANKUMAR347/syntax-sadhak-2341/blob/main/screensort/homep.PNG" alt="Description of the image" ></img>
+<img src="https://github.com/ROHANKUMAR347/syntax-sadhak-2341/blob/main/screensort/paginationp.PNG" alt="Description of the image" ></img>
 
-<img src="" alt="Description of the image"></img>
+<img src="https://github.com/ROHANKUMAR347/syntax-sadhak-2341/blob/main/screensort/signup.PNG" alt="Description of the image"></img>
 
-<img src="" alt="Description of the image"></img>
-<img src="" alt="Description of the image"></img>
+<img src="https://github.com/ROHANKUMAR347/syntax-sadhak-2341/blob/main/screensort/Capture.PNG" alt="Description of the image"></img>
+<img src="https://github.com/ROHANKUMAR347/syntax-sadhak-2341/blob/main/screensort/adminp.PNG" alt="Description of the image"></img>
 
 
 
