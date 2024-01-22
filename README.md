@@ -42,7 +42,7 @@ The project was developed collaboratively by the following 4 team members:
 
 + **Rajat Kumar Jangid** - fw29_071
    <a href="https://www.linkedin.com/in/rajat-jangid-2b2a5b232/">LinkedIn</a>
-   <a href=" https://github.com/RajatKumarJangid">Github</a>
+   <a href="https://github.com/RajatKumarJangid">Github</a>
      
 + **Sameer Ahmad** - fw29_084
    <a href="https://www.linkedin.com/in/sameer-ahmad-aa985428b/">LinkedIn</a>
