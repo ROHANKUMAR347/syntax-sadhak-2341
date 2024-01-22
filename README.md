@@ -1,6 +1,6 @@
 # syntax-sadhak-2341 - Currency converter website
 
-"Welcome to our Currency Converter – your go-to platform for seamless and accurate currency exchange. With real-time rates, intuitive design, and support for a wide range of currencies, we empower you to effortlessly convert and stay updated on global exchange rates. Simplify your financial transactions with confidence, whether you're traveling, investing, or managing international business – our Currency Converter has you covered."
+"Welcome to our Currency Converter – This website is seamless and accurate currency exchange. With real-time rates, intuitive design, and support for a wide range of currencies, we empower you to effortlessly convert and stay updated on global exchange rates."
 
 ## Project Overview
 
