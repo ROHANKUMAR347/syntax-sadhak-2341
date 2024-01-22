@@ -6,7 +6,8 @@ let searchBySelect = document.getElementById("search-by-select");
 let searchByInput = document.getElementById("search-by-input");
 let searchByButton = document.getElementById("search-by-button");
 
-let countryURL = "http://localhost:8080/countryData";
+// let countryURL = "http://localhost:8080/countryData";
+let countryURL = "https://mudra-a9y3.onrender.com/countryData";
 async function fetchData(limit = 6, page = 1, querry = "") {
   try {
     let res = await fetch(
@@ -36,7 +37,7 @@ function createCard(item) {
 
   const image = document.createElement("img");
   image.src = item.image_url;
-  image.alt = `Flag of ${item.name}`; 
+  image.alt = `Flag of ${item.name}`;
   imgDiv.append(image);
 
   const cardbody = document.createElement("div");
@@ -112,5 +113,5 @@ searchByInput.addEventListener("input", function () {
   debounceTimeout = setTimeout(function () {
     const query = searchByInput.value;
     fetchData(6, 1, `&q=${query}`);
-  }, 1000); 
+  }, 1000);
 });

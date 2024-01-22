@@ -768,6 +768,7 @@ justify-content: space-around;
   gap: 40px;
 }
 .pagination-wrapper{
+  /* font-size: 14px; */
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
