@@ -30,7 +30,15 @@ To explore Mudra visit https://mudraexchange.netlify.app/ Use the top navigation
 
 ### Screen Short
 
-<img src="./screensort/homep.PNG"></img>
+<img src="" alt="Description of the image" ></img>
+<img src="" alt="Description of the image" ></img>
+
+<img src="" alt="Description of the image"></img>
+
+<img src="" alt="Description of the image"></img>
+<img src="" alt="Description of the image"></img>
+
+
 
 
 ## Team Members
