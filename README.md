@@ -29,6 +29,7 @@ To explore Mudra visit https://mudraexchange.netlify.app/ Use the top navigation
 
 
 ### Screen Short
+<img src="./screensort/homep.PNG"></img>
 
 
 
