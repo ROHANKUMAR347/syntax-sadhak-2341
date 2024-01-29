@@ -46,7 +46,7 @@ To explore Mudra visit https://mudraexchange.netlify.app/ Use the top navigation
 The project was developed collaboratively by the following 4 team members:
 
 - **Rohan Kumar Sethi** - fw28_214
-  <a href="www.linkedin.com/in/rohansethi347">LinkedIn</a>
+  <a href="https://www.linkedin.com/in/rohansethi347/">LinkedIn</a>
   <a href="https://github.com/ROHANKUMAR347">Github</a>
 
 - **Rajat Kumar Jangid** - fw29_071
